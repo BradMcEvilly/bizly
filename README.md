@@ -1,6 +1,39 @@
 # bizly-react-native-laravel-app
 Bizly app exercise - React Native using a RESTful Laravel API powered by a relational (MySQL) DB
 
+**Prerequisites**
+
+1. MAMP Pro
+2. React Native 
+3. Yarn & NPM
+4. Composer
+5. Laravel 5.x
+6. XCode
+7. Android Studio
+
+**Overview**
+
+*/BizlyReactNativeLaravel* is the project's React Native piece.
+
+*/BRNLaravel* is the project's Laravel piece.
+
+
+**Steps**
+
+1. ```git clone http://github.com/bradMcEvilly/bizly```
+2. ```cd bizly/BRNLaravel```
+3. Change ".env.example" to ".env"
+4. ```php artisan migrate --seed```
+5. ```php artisan serve```
+6. Open a new terminal window
+7. ```cd bizly/BizlyReactNativeLaravel```
+8. ```yarn```
+8. ```react-native run-ios```
+
+That's it!
+
+*NOTE: You may run into a common build issue where iOS Simulator fails for React Native on the first run. If this happens, you'll need to manually run from XCode. To do this, open the iOS project in XCode and click 'Product -> run'. That will resolve it.*
+
 **Notes & Assumptions**
 1. Scope - Omitted venue inventory data models, authentication, and the overall booking funnel / booking engine (obviously) along with some other more granular components such as ratings, etc.
 2. Locations / addresses follow the Schema.org guidelines to support internationalization.

@@ -28,11 +28,15 @@ Bizly app exercise - React Native using a RESTful Laravel API powered by a relat
 6. Open a new terminal window
 7. ```cd bizly/BizlyReactNativeLaravel```
 8. ```yarn```
-8. ```react-native run-ios```
+9. ```react-native run-ios```
+10. Update iOS build identifier in XCode
 
 That's it!
 
 *NOTE: You may run into a common build issue where iOS Simulator fails for React Native on the first run. If this happens, you'll need to manually run from XCode. To do this, open the iOS project in XCode and click 'Product -> run'. That will resolve it.*
+
+*More on that here:
+https://github.com/facebook/react-native/issues/12754*
 
 **Notes & Assumptions**
 1. Scope - Omitted venue inventory data models, authentication, and the overall booking funnel / booking engine (obviously) along with some other more granular components such as ratings, etc.
@@ -40,6 +44,7 @@ That's it!
 3. Data models (and corresponding seed data), app navigation, and API endpoints were all derived from the current web app within the "Individual" context.
 4. Assumed a venue / location constraint of 1 per event / booking which may not support all future use cases (i.e. larger events may require multiple rooms and venue locations).
 6. The local "dev" .env file is included for convenience as it's just an exercise - I usually just include details on what vars & values should be included in your local .env config within the README.md or the ".env.example" to facilitate a seamless engineer onboarding experience. For this, it's just pushed as-is locally.
+7. Optimized & tested for iOS.
 
 
 _Below is a high-level overview of our data models for this exercise_
